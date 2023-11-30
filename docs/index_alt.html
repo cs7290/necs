@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>NECS Data Analysis</title>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" />
+        <style>
+            div#observablehq-viewof-selectedQuestion-becc7586.observablehq > form.oi-3a86ea.oi-3a86ea-checkbox > div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            div#observablehq-viewof-selectedQuestion-becc7586.observablehq > form.oi-3a86ea.oi-3a86ea-checkbox {
+                max-width:none;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">NECS Data Analysis</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top">Story</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#analysis1">Solution</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <h1 class="float-start text-secondary mb-0">Background (Story)</h1>
+                <br>
+                <p class="text-start fs-4 fst-italic fw-bolder">Cancer survivors face uncertainty about their future because of the possibility of cancer recurrence. A new dataset permits evaluation of uncertainty and emotional well-being among cancer survivors. Preliminary evidence suggests that such prognosic uncertainty might confer benefits because it may give patients a chance to hope for a more favorable outcome.</p>
+                <p class="text-start fs-4 fst-italic fw-bolder">Preliminary results using data from 105 patients suggest a significant association between age and uncertainty about cancer recurrence [cite publication]. Younger patients (age 49-59) reported higher uncertainty compared to older patients (age 60-89). Other descriptive and correlational data exist in the dataset. Initial results demonstrate that high-volume cancer clinic can measure important patient-reported outcomes and cancer survivors’ attitudes towards cancer recurrence. Additional data will allow further study of the correlation between patients’ age and their uncertainty about cancer recurrence, and may lead to improved support for cancer survivors</p>
+                <p class="text-start fs-4 fst-italic fw-bolder">The New England Cancer Specialists in Maine started collecting data in late 2022 from adult cancer survivors presenting for follow-up appointments to discuss surveillance-test results. The patients were asked to fill out a survey about their attitudes regarding cancer recurrence, cancer-related distress, and coping strategies, along with sociodemographic information, cancer stage, and cancer status. Patients also completed questions designed to measure health-related quality of life and symptoms.</p>
+        </header>
+        <!-- Solution Section-->
+        <section class="page-section bg-primary text-white mb-0" id="analysis1">
+            <section class="page-section" id="analysis1">
+                <div class="container">
+                    <h1 class="text-secondary mb-0">Solution</h1>
+                    <br>
+                    <div class="row">
+                     <div class="col-xl-15 col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-secondary">Responses to key NECS Uncertainty Questions by Various Groups</h6>
+                                </div>
+                                <div class="card-body text-secondary">
+                                    <p>This solution provides a way of exploring participant responses per question, broken down by various demographic dimensions</p>
+                                    <div id="observablehq-viewof-selectedQuestion-64c0253b"></div>
+                                    <div id="observablehq-viewof-facet1-64c0253b"></div>
+                                    <div id="observablehq-viewof-facet2-64c0253b"></div>
+                                    <div id="observablehq-graph-64c0253b"></div>
+                                    <p>Credit: <a href="https://observablehq.com/d/63e48a403a7d1f1a">Untitled by class</a></p>
+                                    
+                                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                                    <script type="module">
+                                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                                    import define from "https://api.observablehq.com/d/63e48a403a7d1f1a.js?v=4";
+                                    new Runtime().module(define, name => {
+                                      if (name === "viewof selectedQuestion") return new Inspector(document.querySelector("#observablehq-viewof-selectedQuestion-64c0253b"));
+                                      if (name === "viewof facet1") return new Inspector(document.querySelector("#observablehq-viewof-facet1-64c0253b"));
+                                      if (name === "viewof facet2") return new Inspector(document.querySelector("#observablehq-viewof-facet2-64c0253b"));
+                                      if (name === "graph") return new Inspector(document.querySelector("#observablehq-graph-64c0253b"));
+                                      return ["uncertaintyPlot"].includes(name);
+                                    });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container fs-3">
+                The Roux institute, Northeastern University
+                <br>
+                Portland Maine.
+                Course - CS7250
+            </div>
+        </footer>
+    </body>
+</html>
